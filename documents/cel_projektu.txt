@@ -1,0 +1,2 @@
+Celem projektu jest utworzenie aplikacji na telefony (Android, iOS) umożliwiającą grę w szachy z komputerowym przeciwnikiem. Aplikacja ma umożliwiać rzutowanie wirtualnej planszy na rzeczywisty obraz z kamery telefonu (rzeczywistość rozszerzona).
+
