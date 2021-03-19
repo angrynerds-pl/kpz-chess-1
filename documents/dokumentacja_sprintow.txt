@@ -1,0 +1,6 @@
+Sprint 1: Deadline 2.04.2021
+Jędrek - AI Szachy
+Kuba - Efekty dźwiękowe, dokumentacja
+Aleks - Scena, Animacje, Interakcja user-program
+
+Wnioski:
