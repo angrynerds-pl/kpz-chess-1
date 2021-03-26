@@ -1,0 +1,10 @@
+[System.Serializable]
+public enum MaterialIndex
+{
+    WHITE_FIGURE,
+    WHITE_FIGURE_POINTED,
+    WHITE_FIGURE_SELECTED,
+    BLACK_FIGURE,
+    BLACK_FIGURE_POINTED,
+    BLACK_FIGURE_SELECTED
+}
