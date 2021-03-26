@@ -942,6 +942,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SelectableFigure
       objectReference: {fileID: 0}
+    - target: {fileID: -6560918321792314100, guid: 333d9e0c2d0c22bb5ad021bc40a7a257,
+        type: 3}
+      propertyPath: m_Name
+      value: WhitePieces
+      objectReference: {fileID: 0}
+    - target: {fileID: -5971663317599960168, guid: 333d9e0c2d0c22bb5ad021bc40a7a257,
+        type: 3}
+      propertyPath: m_Name
+      value: ChessBoard
+      objectReference: {fileID: 0}
     - target: {fileID: -5468974871167479577, guid: 333d9e0c2d0c22bb5ad021bc40a7a257,
         type: 3}
       propertyPath: m_TagString
@@ -977,6 +987,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SelectableFigure
       objectReference: {fileID: 0}
+    - target: {fileID: -407054977430341109, guid: 333d9e0c2d0c22bb5ad021bc40a7a257,
+        type: 3}
+      propertyPath: m_Name
+      value: BlackPieces
+      objectReference: {fileID: 0}
     - target: {fileID: -169250163759217213, guid: 333d9e0c2d0c22bb5ad021bc40a7a257,
         type: 3}
       propertyPath: m_TagString
@@ -990,7 +1005,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 333d9e0c2d0c22bb5ad021bc40a7a257,
         type: 3}
       propertyPath: m_Name
-      value: Chess Set
+      value: ChessSet
       objectReference: {fileID: 0}
     - target: {fileID: 4538771486187445645, guid: 333d9e0c2d0c22bb5ad021bc40a7a257,
         type: 3}
