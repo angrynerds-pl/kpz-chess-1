@@ -5,6 +5,7 @@ using System.Collections.Generic;
 //TODO - Check moves
 //TODO - pawn fly move
 //TODO - pawn replace move
+//TODO - DO NOT KILL KING
 
 namespace ChessMove
 {   
