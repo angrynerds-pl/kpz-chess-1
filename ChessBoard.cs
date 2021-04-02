@@ -55,7 +55,7 @@ namespace BenChess
          */
 
 
-        public static String ArraytoString(int[][][] array, int depth)
+        public static int[] GetComputerMove(int[][][] array, int depth)
         {
             int  size = array.GetLength(0);
             //ChessBoard finalBoard = new ChessBoard();
@@ -68,43 +68,43 @@ namespace BenChess
                     switch (array[size-1][row][col])
                     {
                         case 0:
-                            finalBoard.board[7-row, col] = GetChessPiece(' ');
+                            finalBoard.board[7-row, 7 - col] = GetChessPiece(' ');
                             break;
                         case 1:
-                            finalBoard.board[7 - row, col] = GetChessPiece('P');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('P');
                             break;
                         case 2:
-                            finalBoard.board[7 - row, col] = GetChessPiece('R');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('R');
                             break;
                         case 3:
-                            finalBoard.board[7 - row, col] = GetChessPiece('N');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('N');
                             break;
                         case 4:
-                            finalBoard.board[7 - row, col] = GetChessPiece('B');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('B');
                             break;
                         case 5:
-                            finalBoard.board[7 - row, col] = GetChessPiece('Q');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('Q');
                             break;
                         case 6:
-                            finalBoard.board[7 - row, col] = GetChessPiece('K');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('K');
                             break;
                         case -1:
-                            finalBoard.board[7 - row, col] = GetChessPiece('p');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('p');
                             break;
                         case -2:
-                            finalBoard.board[7 - row, col] = GetChessPiece('r');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('r');
                             break;
                         case -3:
-                            finalBoard.board[7 - row, col] = GetChessPiece('n');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('n');
                             break;
                         case -4:
-                            finalBoard.board[7 - row, col] = GetChessPiece('b');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('b');
                             break;
                         case -5:
-                            finalBoard.board[7 - row, col] = GetChessPiece('q');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('q');
                             break;
                         case -6:
-                            finalBoard.board[7 - row, col] = GetChessPiece('k');
+                            finalBoard.board[7 - row, 7 - col] = GetChessPiece('k');
                             break;
                         default:
                             break;
@@ -126,7 +126,7 @@ namespace BenChess
                     finalBoard.flags |= BoardFlags.WhiteKingSideCastlingEnded;
                 }
                 // biały król
-                if (array[h][0][4] != 6)
+                if (array[h][0][3] != 6)
                 {
                     finalBoard.flags |= BoardFlags.WhiteKingSideCastlingEnded | BoardFlags.WhiteQueenSideCastlingEnded;
                 }
@@ -141,16 +141,12 @@ namespace BenChess
                     finalBoard.flags |= BoardFlags.BlackKingSideCastlingEnded;
                 }
                 //czarny król
-                if (array[h][7][4] != -6)
+                if (array[h][7][3] != -6)
                 {
                     finalBoard.flags |= BoardFlags.BlackKingSideCastlingEnded | BoardFlags.BlackQueenSideCastlingEnded;
                 }
 
-
-
-
             }
-
             //RUCH CZARNCYH
             if (size % 2 == 0)
             {
@@ -158,7 +154,21 @@ namespace BenChess
             }
             ChessMove move = Evaluator.GetBestMove(finalBoard, depth);
             String ruch = move.ToString();
-            return ruch;
+
+            char row1 = ruch[0];
+            char row2 = ruch[3];
+            char col1 = ruch[2];
+            char col2 = ruch[4];
+            int row1int = (int)row1;
+            int row2int = (int)row2;
+            int col1int, col2int;
+            row1int -= 97;
+            row2int -= 97;
+            col1int = col1 - '0';
+            col2int = col2 - '0';
+
+            int[] movetab = { row1int, col1int, row2int, col2int };
+            return movetab;
 
         }
 
