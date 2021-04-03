@@ -1,24 +1,3 @@
-#if !NOT_UNITY3D
-
-using System.IO;
-using UnityEditor;
-using UnityEngine;
-using Zenject.Internal;
-
-namespace Zenject.ReflectionBaking
-{
-    public static class ReflectionBakingMenuItems
-    {
-        [MenuItem("Assets/Create/Zenject/Reflection Baking Settings", false, 100)]
-        public static void CreateReflectionBakingSettings()
-        {
-            var folderPath = ZenUnityEditorUtil.GetCurrentDirectoryAssetPathFromSelection();
-
-            var config = ScriptableObject.CreateInstance<ZenjectReflectionBakingSettings>();
-
-            ZenUnityEditorUtil.SaveScriptableObjectAsset(
-                Path.Combine(folderPath, "ZenjectReflectionBakingSettings.asset"), config);
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:540f5b8f24290a1448b3ebe2b596765e85ccda8e68fee5b79df65666054fdb38
+size 707

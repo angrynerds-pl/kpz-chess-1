@@ -1,14 +1,3 @@
-{
-    "name": "Zenject-TestFramework",
-    "references": [
-        "Zenject"
-    ],
-    "optionalUnityReferences": [
-        "TestAssemblies"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:153eacf9cf04f33dbd742e8d0d60f2a653e438745103adecd94d3ffb3899b751
+size 257

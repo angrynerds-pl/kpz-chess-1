@@ -1,3 +1,3 @@
-
-To test destruction order, rename the RenameThisResources folder in this directory to Resources, then add TestDestructionOrder1 and TestDestructionOrder2 to build settings, then run TestDestructionOrder1 either in unity or in a build, then look at the log to verify destruction order
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4fafb9e0dc88822c845249b674b3efa7a0200f2f6e608f159d4ae431fb56128
+size 286

@@ -1,18 +1,3 @@
-namespace Zenject.Tests.Installers.MonoInstallers
-{
-    public class QuxInstaller : MonoInstaller<string, float, int, QuxInstaller>
-    {
-        string _p1;
-
-        [Inject]
-        public void Construct(string p1, float p2, int p3)
-        {
-            _p1 = p1;
-        }
-
-        public override void InstallBindings()
-        {
-            Container.BindInstance(_p1);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c009201f003c0259fca60e4e55bcb2519222586cc11b5a5b657b2d78c9ba60b
+size 394

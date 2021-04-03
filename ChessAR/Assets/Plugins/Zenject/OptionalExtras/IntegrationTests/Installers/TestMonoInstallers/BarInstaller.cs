@@ -1,18 +1,3 @@
-namespace Zenject.Tests.Installers.MonoInstallers
-{
-    public class BarInstaller : MonoInstaller<string, BarInstaller>
-    {
-        string _value;
-
-        [Inject]
-        public void Construct(string value)
-        {
-            _value = value;
-        }
-
-        public override void InstallBindings()
-        {
-            Container.BindInstance(_value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f2a564fb55e0f95b397d9e2a2c33ac6af9a37f0060d2244295f000f9f4e29e2
+size 379

@@ -1,25 +1,3 @@
-﻿using ModestTree;
-using UnityEngine;
-
-#pragma warning disable 649
-
-namespace Zenject.Tests.Bindings.DiContainerMethods
-{
-    //[CreateAssetMenu(fileName = "Gorp2", menuName = "Test/Gorp2")]
-    public class Gorp2 : ScriptableObject
-    {
-        [Inject]
-        string _arg;
-
-        public string Arg
-        {
-            get { return _arg; }
-        }
-
-        [Inject]
-        public void Initialize()
-        {
-            Log.Trace("Received arg '{0}' in Gorp", _arg);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec385c3f99c63cbc374be916aae61153c269b75cf8140545343517fb0d5cdbee
+size 497

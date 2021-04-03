@@ -1,31 +1,3 @@
-namespace Zenject
-{
-    [NoReflectionBaking]
-    public class DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder : DeclareSignalAsyncTickPriorityCopyBinder
-    {
-        public DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder(
-            SignalDeclarationBindInfo signalBindInfo)
-            : base(signalBindInfo)
-        {
-        }
-
-        public DeclareSignalAsyncTickPriorityCopyBinder RequireSubscriber()
-        {
-            SignalBindInfo.MissingHandlerResponse = SignalMissingHandlerResponses.Throw;
-            return this;
-        }
-
-        public DeclareSignalAsyncTickPriorityCopyBinder OptionalSubscriber()
-        {
-            SignalBindInfo.MissingHandlerResponse = SignalMissingHandlerResponses.Ignore;
-            return this;
-        }
-
-        public DeclareSignalAsyncTickPriorityCopyBinder OptionalSubscriberWithWarning()
-        {
-            SignalBindInfo.MissingHandlerResponse = SignalMissingHandlerResponses.Warn;
-            return this;
-        }
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1507d16135c4846f082a26451aa28c4fc3b9b3f354d81f22f0b9adb89d5a211f
+size 1001

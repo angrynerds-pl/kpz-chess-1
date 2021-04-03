@@ -1,8 +1,3 @@
-Opis poszczególnych PSP
-
-Sprint 1: Przygotowane materiały i narzędzia potrzebne do przystąpienia do prac. Posiadanie gotowego skryptu C# podającego szachowy ruch przeciwnika
-Sprint 2: Stworzona gra typu szachy (interakcja użytkownik-program, możliwa gra z komputerem)
-Sprint 3: Wdrożony moduł AR
-Sprint 4: Zaimplementowany lokalny multiplayer
-Sprint 5: Produkt gotowy do wypuszczenia na rynek
-Sprint 6: Produkt dostępny na rynku, działająca kampania marketingowa
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ba15c693aa13af48f51d53ed3d1429ae90e26de7f142e1ae3b98caa048912ff
+size 475

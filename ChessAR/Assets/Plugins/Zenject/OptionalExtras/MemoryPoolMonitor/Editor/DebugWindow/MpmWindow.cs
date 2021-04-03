@@ -1,27 +1,3 @@
-using System;
-using ModestTree;
-using UnityEngine;
-using UnityEditor;
-using Zenject;
-
-namespace Zenject.MemoryPoolMonitor
-{
-    public class MpmWindow : ZenjectEditorWindow
-    {
-        [MenuItem("Window/Zenject Pool Monitor")]
-        public static MpmWindow GetOrCreateWindow()
-        {
-            var window = EditorWindow.GetWindow<MpmWindow>();
-            window.titleContent = new GUIContent("Pool Monitor");
-            return window;
-        }
-
-        public override void InstallBindings()
-        {
-            MpmSettingsInstaller.InstallFromResource(Container);
-
-            Container.BindInstance(this);
-            Container.BindInterfacesTo<MpmView>().AsSingle();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9d8fb558417f6060a29a6cfbdfdc2493acda66c73667f23cabbf93fbfa96a4d
+size 702

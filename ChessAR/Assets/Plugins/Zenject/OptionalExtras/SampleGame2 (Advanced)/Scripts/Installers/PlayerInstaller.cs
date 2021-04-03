@@ -1,34 +1,3 @@
-﻿using System;
-using UnityEngine;
-
-namespace Zenject.SpaceFighter
-{
-    public class PlayerInstaller : MonoInstaller
-    {
-        [SerializeField]
-        Settings _settings = null;
-
-        public override void InstallBindings()
-        {
-            Container.Bind<Player>().AsSingle()
-                .WithArguments(_settings.Rigidbody, _settings.MeshRenderer);
-
-            Container.BindInterfacesTo<PlayerInputHandler>().AsSingle();
-            Container.BindInterfacesTo<PlayerMoveHandler>().AsSingle();
-            Container.BindInterfacesAndSelfTo<PlayerDamageHandler>().AsSingle();
-            Container.BindInterfacesTo<PlayerDirectionHandler>().AsSingle();
-            Container.BindInterfacesTo<PlayerShootHandler>().AsSingle();
-
-            Container.Bind<PlayerInputState>().AsSingle();
-
-            Container.BindInterfacesTo<PlayerHealthWatcher>().AsSingle();
-        }
-
-        [Serializable]
-        public class Settings
-        {
-            public Rigidbody Rigidbody;
-            public MeshRenderer MeshRenderer;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2dca409eedd9fb7eae795a1bde419962a36b157d622decea3107fa4935d22a4f
+size 1058

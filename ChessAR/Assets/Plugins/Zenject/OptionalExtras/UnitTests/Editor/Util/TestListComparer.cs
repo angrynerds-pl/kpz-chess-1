@@ -1,34 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using ModestTree;
-using Assert=ModestTree.Assert;
-
-namespace Zenject.Tests
-{
-    public static class TestListComparer
-    {
-        public static bool ContainSameElements(IEnumerable listA, IEnumerable listB)
-        {
-            return ContainSameElementsInternal(listA.Cast<object>().ToList(), listB.Cast<object>().ToList());
-        }
-
-        static bool ContainSameElementsInternal(
-            List<object> listA, List<object> listB)
-        {
-            // We don't care how they are sorted as long as they are sorted the same way so just use hashcode
-            Comparison<object> comparer = (object left, object right) => (left.GetHashCode().CompareTo(right.GetHashCode()));
-
-            listA.Sort(comparer);
-            listB.Sort(comparer);
-
-            return Enumerable.SequenceEqual(listA, listB);
-        }
-
-        public static string PrintList<T>(List<T> list)
-        {
-            return list.Select(x => x.ToString()).ToArray().Join(",");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b12a2f972820b1056c370198beb9079c02059e60927e4b91e736e5a02a630a4
+size 1075

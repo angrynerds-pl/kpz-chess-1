@@ -1,10 +1,3 @@
-namespace Zenject.Tests.AutoLoadSceneTests
-{
-    public class Scene2Installer : MonoInstaller<Scene2Installer>
-    {
-        public override void InstallBindings()
-        {
-            Container.Bind<Bar>().AsSingle();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:665074f6f95f389012d0de6bbf757796e90910a822b8d076eccbcb10e1980d75
+size 238

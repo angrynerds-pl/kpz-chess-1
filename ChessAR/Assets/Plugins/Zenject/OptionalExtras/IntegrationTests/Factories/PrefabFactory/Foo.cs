@@ -1,23 +1,3 @@
-using UnityEngine;
-
-namespace Zenject.Tests.Factories.PrefabFactory
-{
-    public class Foo : MonoBehaviour
-    {
-        public bool WasInitialized;
-
-        [Inject]
-        public void Init()
-        {
-            WasInitialized = true;
-        }
-
-        public class Factory : PlaceholderFactory<Object, Foo>
-        {
-        }
-
-        public class Factory2 : PlaceholderFactory<string, Foo>
-        {
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed676070da134be6b5939c0f729540e9e4783afe5343ff65fc20435f7fd3d718
+size 426

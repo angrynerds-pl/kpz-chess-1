@@ -1,2 +1,3 @@
-Celem projektu jest utworzenie aplikacji na telefony (Android, iOS) umożliwiającą grę w szachy z komputerowym przeciwnikiem. Aplikacja ma umożliwiać rzutowanie wirtualnej planszy na rzeczywisty obraz z kamery telefonu (rzeczywistość rozszerzona).
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d443a6d42601b2292e02eb3e292fb4dbb78e3ea90a3b5aac73c4793b50b016e5
+size 256

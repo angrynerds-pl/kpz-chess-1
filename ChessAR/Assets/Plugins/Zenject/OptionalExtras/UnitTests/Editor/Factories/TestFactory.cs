@@ -1,30 +1,3 @@
-using NUnit.Framework;
-using Assert = ModestTree.Assert;
-
-namespace Zenject.Tests.AbstractFactory
-{
-    [TestFixture]
-    public class TestFactory : ZenjectUnitTestFixture
-    {
-        [Test]
-        public void TestToSelf()
-        {
-            Container.BindFactory<Foo, Foo.Factory>().NonLazy();
-
-            Assert.IsNotNull(Container.Resolve<Foo.Factory>().Create());
-        }
-
-        public interface IFoo
-        {
-        }
-
-        public class Foo : IFoo
-        {
-            public class Factory : PlaceholderFactory<Foo>
-            {
-            }
-        }
-    }
-}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:89e0a132b896d847273e3c14997da133d3813b7df0ed8c2112af6028a8a67e1c
+size 586

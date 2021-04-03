@@ -1,24 +1,3 @@
-using ModestTree;
-
-namespace Zenject
-{
-    // Note that you only need to install this once
-    public class SignalBusInstaller : Installer<SignalBusInstaller>
-    {
-        public override void InstallBindings()
-        {
-            Assert.That(!Container.HasBinding<SignalBus>(), "Detected multiple SignalBus bindings.  SignalBusInstaller should only be installed once");
-
-            Container.BindInterfacesAndSelfTo<SignalBus>().AsSingle().CopyIntoAllSubContainers();
-
-            Container.BindInterfacesTo<SignalDeclarationAsyncInitializer>().AsSingle().CopyIntoAllSubContainers();
-
-            Container.BindMemoryPool<SignalSubscription, SignalSubscription.Pool>();
-
-            // Dispose last to ensure that we don't remove SignalSubscription before the user does
-            Container.BindLateDisposableExecutionOrder<SignalBus>(-999);
-
-            Container.BindFactory<SignalDeclarationBindInfo, SignalDeclaration, SignalDeclaration.Factory>();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8015ee6bbb94c046fb41d5752fb3671f1729b909e4a4fbabb37060c4dcab57da
+size 977

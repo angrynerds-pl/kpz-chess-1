@@ -1,25 +1,3 @@
-using UnityEngine;
-
-namespace Zenject.Tests.Factories.BindFactoryOne
-{
-    //[CreateAssetMenu(fileName = "Bar", menuName = "Installers/Bar")]
-    public class Bar : ScriptableObject
-    {
-        [Inject]
-        public void Init(string value)
-        {
-            Value = value;
-        }
-
-        public string Value
-        {
-            get;
-            private set;
-        }
-
-        public class Factory : PlaceholderFactory<string, Bar>
-        {
-        }
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c753471d199c143a74012ce0adfbf75e96442c0df56fff9ec4538c597ad9136e
+size 475

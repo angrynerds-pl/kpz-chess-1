@@ -1,12 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Zenject.Tests.Bindings.FromPrefabResource
-{
-    public class Jim : MonoBehaviour
-    {
-        [NonSerialized]
-        [Inject]
-        public Bob Bob;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2496506dac381e449cd900fa03cdd963e063b5c9d2d5aef70ec8582cfa26972b
+size 204

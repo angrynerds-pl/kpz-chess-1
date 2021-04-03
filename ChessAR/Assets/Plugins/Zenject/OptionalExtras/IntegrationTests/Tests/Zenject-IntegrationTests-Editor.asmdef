@@ -1,24 +1,3 @@
-{
-    "name": "Zenject-IntegrationTests-Editor",
-    "references": [
-        "Zenject-TestFramework",
-        "Zenject",
-        "Zenject-IntegrationTests",
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "Zenject-usage.dll",
-        "nunit.framework.dll"
-    ],
-    "autoReferenced": false,
-    "defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
-    ],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9e1a7fe3453b0eaf5977d7db73ce9a58f9e9ff5a60898579756ce77e62c45c2
+size 598

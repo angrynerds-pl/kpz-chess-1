@@ -1,19 +1,3 @@
-namespace Zenject.Tests.Installers.ScriptableObjectInstallers
-{
-    //[CreateAssetMenu(fileName = "BarInstaller", menuName = "Installers/BarInstaller")]
-    public class BarInstaller : ScriptableObjectInstaller<string, BarInstaller>
-    {
-        string _value;
-
-        [Inject]
-        public void Construct(string value)
-        {
-            _value = value;
-        }
-
-        public override void InstallBindings()
-        {
-            Container.BindInstance(_value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b35fc3fe10f68b220e3fd2400572854771db0c871e2cc4fc7fa0ad564d55665
+size 492

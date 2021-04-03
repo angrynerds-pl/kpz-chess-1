@@ -1,4 +1,3 @@
-Spotkania u profesora Burduka prezentujące postęp prac nad projektem: 
--22.04
--13.05
--10.06
+version https://git-lfs.github.com/spec/v1
+oid sha256:16a86d4136e94f236f5445a7c6e4ad899a0e52613b0ae3fa330bf257f3501476
+size 94

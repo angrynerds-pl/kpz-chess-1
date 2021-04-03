@@ -1,25 +1,3 @@
-using NUnit.Framework;
-
-namespace Zenject.Tests.Other
-{
-    [TestFixture]
-    public class TestTransientMockProvider : ZenjectUnitTestFixture
-    {
-        public interface IFoo
-        {
-            int GetBar();
-        }
-
-        [Test]
-        public void TestCase1()
-        {
-            // Commented out because this requires that zenject be installed with mocking support which isn't always the case
-
-            //Container.FallbackProvider = new TransientMockProvider(Container);
-
-            //var foo = Container.Resolve<IFoo>();
-
-            //Assert.IsEqual(foo.GetBar(), 0);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b00131211c57401e2a9f24707f4fd25460d8403050e1f26145517ff991f349a
+size 608

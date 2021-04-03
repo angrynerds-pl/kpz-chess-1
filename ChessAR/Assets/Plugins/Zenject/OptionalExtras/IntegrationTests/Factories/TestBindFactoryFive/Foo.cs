@@ -1,35 +1,3 @@
-﻿using UnityEngine;
-
-namespace Zenject.Tests.Factories.BindFactoryFive
-{
-    public interface IFoo
-    {
-        string Value
-        {
-            get;
-        }
-    }
-
-    public class IFooFactory : PlaceholderFactory<double, int, float, string, char, IFoo>
-    {
-    }
-
-    public class Foo : MonoBehaviour, IFoo
-    {
-        [Inject]
-        public void Init(double p1, int p2, float p3, string p4, char p5)
-        {
-            Value = p4;
-        }
-
-        public string Value
-        {
-            get;
-            private set;
-        }
-
-        public class Factory : PlaceholderFactory<double, int, float, string, char, Foo>
-        {
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:687632445c5f890c952f1c57a3a8c8b0dde8dfe83cdb2757bb8268bd11ad08a3
+size 668

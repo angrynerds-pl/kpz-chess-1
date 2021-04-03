@@ -1,18 +1,3 @@
-using UnityEngine;
-using UnityEditor;
-using Zenject;
-
-namespace Zenject.MemoryPoolMonitor
-{
-    [CreateAssetMenu(fileName = "MpmSettingsInstaller", menuName = "Installers/MpmSettingsInstaller")]
-    public class MpmSettingsInstaller : ScriptableObjectInstaller<MpmSettingsInstaller>
-    {
-        public MpmView.Settings MpmView;
-        public MpmView.Settings MpmViewDark;
-
-        public override void InstallBindings()
-        {
-            Container.BindInstance(EditorGUIUtility.isProSkin ? MpmViewDark : MpmView);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:94bf79e5bae9591b4993967f0f6236dcb57a562274447528e53b590d81733984
+size 539

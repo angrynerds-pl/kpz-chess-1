@@ -1,33 +1,3 @@
-using NUnit.Framework;
-using Assert = ModestTree.Assert;
-
-namespace Zenject.Tests.BindFeatures
-{
-    [TestFixture]
-    public class TestRebind : ZenjectUnitTestFixture
-    {
-        interface ITest
-        {
-        }
-
-        class Test2 : ITest
-        {
-        }
-
-        class Test3 : ITest
-        {
-        }
-
-        [Test]
-        public void Run()
-        {
-            Container.Bind<ITest>().To<Test2>().AsSingle();
-
-            Assert.That(Container.Resolve<ITest>() is Test2);
-
-            Container.Rebind<ITest>().To<Test3>().AsSingle();
-
-            Assert.That(Container.Resolve<ITest>() is Test3);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4574a57caba46e74194a9c5bd53932c381268b6a0a075892ff14e7077795fd0b
+size 635

@@ -1,13 +1,3 @@
-﻿using System;
-using UnityEngine;
-
-namespace Zenject.Tests.TestDestructionOrder
-{
-    public class FooDisposable1 : IDisposable
-    {
-        public void Dispose()
-        {
-            Debug.Log("Destroyed FooDisposable1");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:266ae450be98d1f4b61044b5a608faff393b3146084514f2b10dc11c723c066e
+size 245

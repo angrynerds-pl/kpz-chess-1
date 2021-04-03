@@ -1,14 +1,3 @@
-using UnityEngine;
-
-
-public class PlayerMoveState : BaseState
-{
-    public PlayerMoveState(IStateMachine stateMachine) : base(stateMachine)
-    {
-    }
-
-    public override void InitializeState()
-    {
-        Debug.Log("PlayerMove");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a46515dd0f41593b87b9bbd5d534c75d797f9b740def5e8a47426e99c5b7c2b7
+size 540

@@ -1,32 +1,3 @@
-using UnityEngine;
-
-namespace Zenject.SpaceFighter
-{
-    public class PlayerDirectionHandler : ITickable
-    {
-        readonly Player _player;
-        readonly Camera _mainCamera;
-
-        public PlayerDirectionHandler(
-            Camera mainCamera,
-            Player player)
-        {
-            _player = player;
-            _mainCamera = mainCamera;
-        }
-
-        public void Tick()
-        {
-            var mouseRay = _mainCamera.ScreenPointToRay(Input.mousePosition);
-
-            var mousePos = mouseRay.origin;
-            mousePos.z = 0;
-
-            var goalDir = mousePos - _player.Position;
-            goalDir.z = 0;
-            goalDir.Normalize();
-
-            _player.Rotation = Quaternion.LookRotation(goalDir) * Quaternion.AngleAxis(90, Vector3.up);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c3645f8f18a97b59076ce1f6220dce7e3a6d8b72de3b97a9f64af6d5f4e7a7b
+size 795

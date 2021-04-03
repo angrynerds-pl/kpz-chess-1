@@ -1,15 +1,3 @@
-#if UNITY_EDITOR
-
-using System;
-using UnityEditor;
-using UnityEngine;
-
-namespace Zenject
-{
-    public class SceneTestFixtureSceneReference : ScriptableObject
-    {
-        public SceneAsset Scene;
-    }
-}
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:6bcdcf1b972afd525b83c4947b86f52a04fa34d44cfb2138441c919509e76edb
+size 213

@@ -1,24 +1,3 @@
-using UnityEngine;
-
-namespace Zenject.SpaceFighter
-{
-    public class AudioPlayer
-    {
-        readonly Camera _camera;
-
-        public AudioPlayer(Camera camera)
-        {
-            _camera = camera;
-        }
-
-        public void Play(AudioClip clip)
-        {
-            Play(clip, 1);
-        }
-
-        public void Play(AudioClip clip, float volume)
-        {
-            _camera.GetComponent<AudioSource>().PlayOneShot(clip, volume);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6047beb85be2759da1801cfa4eef937cf4bf9ba1cdf6b764c8ab3de3ca14081
+size 462

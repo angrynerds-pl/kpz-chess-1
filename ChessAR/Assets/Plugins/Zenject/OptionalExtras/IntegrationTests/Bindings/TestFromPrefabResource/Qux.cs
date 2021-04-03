@@ -1,19 +1,3 @@
-﻿using ModestTree;
-using UnityEngine;
-
-#pragma warning disable 649
-
-namespace Zenject.Tests.Bindings.FromPrefabResource
-{
-    public class Qux : MonoBehaviour
-    {
-        [Inject]
-        int _arg;
-
-        [Inject]
-        public void Initialize()
-        {
-            Log.Trace("Received arg '{0}' in Qux", _arg);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:50a89d8a84eaa03906904f867adf474c4e5299ed75e9073149cef91d86ebb79f
+size 339

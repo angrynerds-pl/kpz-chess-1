@@ -1,35 +1,3 @@
-namespace Zenject.SpaceFighter
-{
-    public class PlayerInputState
-    {
-        public bool IsMovingLeft
-        {
-            get;
-            set;
-        }
-
-        public bool IsMovingRight
-        {
-            get;
-            set;
-        }
-
-        public bool IsMovingUp
-        {
-            get;
-            set;
-        }
-
-        public bool IsMovingDown
-        {
-            get;
-            set;
-        }
-
-        public bool IsFiring
-        {
-            get;
-            set;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ab91de25086cbf7e39d56ac102297350f5b6f6fb0f434340a821c9aa3597aae
+size 515

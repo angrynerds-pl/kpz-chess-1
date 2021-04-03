@@ -1,19 +1,3 @@
-﻿namespace Zenject.SpaceFighter
-{
-    public class EnemyInstaller : Installer<EnemyInstaller>
-    {
-        public override void InstallBindings()
-        {
-            Container.Bind<EnemyTunables>().AsSingle();
-
-            Container.BindInterfacesAndSelfTo<EnemyStateManager>().AsSingle();
-
-            Container.Bind<EnemyStateIdle>().AsSingle();
-            Container.Bind<EnemyStateAttack>().AsSingle();
-            Container.Bind<EnemyStateFollow>().AsSingle();
-
-            Container.BindInterfacesAndSelfTo<EnemyDeathHandler>().AsSingle();
-            Container.BindInterfacesAndSelfTo<EnemyRotationHandler>().AsSingle();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d37d448f368234926d0ef3d23eac13ef8011913d1cfd4de664a6d000d5697e3
+size 651

@@ -1,19 +1,3 @@
-namespace Zenject.Tests.Installers.ScriptableObjectInstallers
-{
-    //[CreateAssetMenu(fileName = "QuxInstaller", menuName = "Installers/QuxInstaller")]
-    public class QuxInstaller : ScriptableObjectInstaller<string, float, int, QuxInstaller>
-    {
-        string _p1;
-
-        [Inject]
-        public void Construct(string p1, float p2, int p3)
-        {
-            _p1 = p1;
-        }
-
-        public override void InstallBindings()
-        {
-            Container.BindInstance(_p1);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:36dc07e29b3e4bd23c42a87709531e67ec6cfb602a8059c550a5720c3aee926e
+size 507
