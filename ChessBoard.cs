@@ -5,6 +5,13 @@ using System.Text;
 
 namespace BenChess
 {
+
+
+
+
+
+
+
    public class ChessBoard
    {
 
@@ -148,16 +155,16 @@ namespace BenChess
 
             }
             //RUCH CZARNCYH
-            if (size % 2 == 0)
-            {
+          //  if (size % 2 == 0)
+          //  {
                 finalBoard.flags ^= BoardFlags.BlacksTurn;
-            }
+           // }
             ChessMove move = Evaluator.GetBestMove(finalBoard, depth);
             String ruch = move.ToString();
 
             char row1 = ruch[0];
             char row2 = ruch[3];
-            char col1 = ruch[2];
+            char col1 = ruch[1];
             char col2 = ruch[4];
             int row1int = (int)row1;
             int row2int = (int)row2;
@@ -167,7 +174,7 @@ namespace BenChess
             col1int = col1 - '0';
             col2int = col2 - '0';
 
-            int[] movetab = { row1int, col1int, row2int, col2int };
+            int[] movetab = {7- row1int, 7-col1int, 7-row2int,7- col2int };
             return movetab;
 
         }
